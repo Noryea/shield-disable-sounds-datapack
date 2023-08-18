@@ -8,7 +8,7 @@
         "type_specific": {
           "type": "player",
           "advancements": {
-            "sds:detect/block_during_hurttime": true
+            "sds:detect/using_shield": true
           }
         }
       }

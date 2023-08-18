@@ -8,5 +8,8 @@
     [
       "parent"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "sds:every_tick"
+  }
 }
