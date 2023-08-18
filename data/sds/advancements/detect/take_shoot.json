@@ -1,7 +1,7 @@
 {
     "parent": "sds:detect/root",
     "criteria": {
-    "shoot_shield": {
+    "block_projectile": {
         "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -20,7 +20,7 @@
     },
     "requirements": [
       [
-        "shoot_shield"
+        "block_projectile"
       ]
     ],
     "rewards": {
