@@ -1,6 +1,7 @@
 ## To handle the "HurtTime > 0" situation where the attacker CANNOT be figured out at all.
 # Note: this is only used to implement disabling sounds
 
+execute as @a[distance=0..4,predicate=!sds:can_disable,predicate=sds:looking_at_target] run playsound item.shield.block player @s ~ ~ ~
 execute as @a[distance=0..4,predicate=sds:can_disable,predicate=sds:looking_at_target] run tag @s add sds.disabler
 tag @s add sds.self
 
