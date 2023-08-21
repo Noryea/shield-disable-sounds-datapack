@@ -27,8 +27,8 @@ kill @e[tag=sds.player.eyes]
 
 # Play sounds
 #execute as @a[tag=sds.ray.pass] run say pass
-execute as @a[tag=sds.ray.pass] unless predicate sds:can_disable run playsound item.shield.block player @s ~ ~ ~
 execute as @a[tag=sds.ray.pass] if predicate sds:can_disable run tag @s add sds.disabler
+execute unless entity @a[tag=sds.disabler] as @a[tag=sds.ray.pass] run playsound item.shield.block player @s ~ ~ ~
 
 # Delay the sound playing event to confirm the shield is disabled
 schedule function sds:play_sound_hurttime 1t append
