@@ -5,13 +5,7 @@
     "type_specific": {
       "type": "player",
       "looking_at": {
-        "type_specific": {
-          "type": "player",
-          "nbt": "{Tags:[\"sds.self\"]}",
-          "advancements": {
-            "sds:detect/using_shield": true
-          }
-        }
+        "nbt": "{Tags:[\"sds.self\"]}"
       }
     }
   }
